@@ -1,9 +1,9 @@
-import {Meta, StoryObj} from '@storybook/react';
-import {fn} from '@storybook/test';
+import { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test';
 
-import MainPage from "./MainPage";
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import MainPage from './MainPage';
 
 // Default export with metadata
 const meta: Meta<typeof MainPage> = {
@@ -37,7 +37,6 @@ export const Normal: Story = {
 // @ts-ignore
 export const Dark: Story = {
     args: {
-
 
     },
     decorators: [ThemeDecorator(Theme.DARK)],

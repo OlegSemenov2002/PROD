@@ -1,9 +1,9 @@
-import {Meta, StoryObj} from '@storybook/react';
-import {fn} from '@storybook/test';
+import { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test';
 
-import {NotFoundPage} from "./NotFoundPage";
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { NotFoundPage } from './NotFoundPage';
 
 // Default export with metadata
 const meta: Meta<typeof NotFoundPage> = {
@@ -14,7 +14,7 @@ const meta: Meta<typeof NotFoundPage> = {
     },
     tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
+
     },
     args: {
     },
@@ -36,7 +36,6 @@ export const Normal: Story = {
 // @ts-ignore
 export const Dark: Story = {
     args: {
-
 
     },
     decorators: [ThemeDecorator(Theme.DARK)],

@@ -1,9 +1,9 @@
-import {Meta, StoryObj} from '@storybook/react';
-import {fn} from '@storybook/test';
+import { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test';
 
-import {Button, ThemeButton} from './Button';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { Button, ThemeButton } from './Button';
 
 // Default export with metadata
 const meta: Meta<typeof Button> = {
@@ -14,7 +14,7 @@ const meta: Meta<typeof Button> = {
     },
     tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
+
     },
     args: {
         onClick: fn(),

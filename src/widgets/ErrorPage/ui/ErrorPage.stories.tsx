@@ -1,10 +1,8 @@
-import {Meta, StoryObj} from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import {ErrorPage} from "./ErrorPage";
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-
-
+import { ErrorPage } from './ErrorPage';
 
 // Default export with metadata
 const meta: Meta<typeof ErrorPage> = {
@@ -15,8 +13,8 @@ const meta: Meta<typeof ErrorPage> = {
     },
     tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
-    }
+
+    },
 };
 
 export default meta;
@@ -28,7 +26,7 @@ export const Light: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.LIGHT)]
+    decorators: [ThemeDecorator(Theme.LIGHT)],
 
 };
 
@@ -36,6 +34,6 @@ export const Dark: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 
 };

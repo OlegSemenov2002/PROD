@@ -1,8 +1,8 @@
-import {Meta, StoryObj} from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import {Navbar} from './Navbar';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { Navbar } from './Navbar';
 
 // Default export with metadata
 const meta: Meta<typeof Navbar> = {
@@ -13,8 +13,8 @@ const meta: Meta<typeof Navbar> = {
     },
     tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
-    }
+
+    },
 };
 
 export default meta;
@@ -26,11 +26,11 @@ export const Light: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.LIGHT)]
+    decorators: [ThemeDecorator(Theme.LIGHT)],
 };
 export const Dark: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 };

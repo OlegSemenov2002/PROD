@@ -1,8 +1,8 @@
-import {Meta, StoryObj} from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import {Sidebar} from "./Sidebar";
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { Sidebar } from './Sidebar';
 
 // Default export with metadata
 const meta: Meta<typeof Sidebar> = {
@@ -13,8 +13,8 @@ const meta: Meta<typeof Sidebar> = {
     },
     tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
-    }
+
+    },
 };
 
 export default meta;
@@ -26,11 +26,11 @@ export const Light: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.LIGHT)]
+    decorators: [ThemeDecorator(Theme.LIGHT)],
 };
 export const Dark: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 };

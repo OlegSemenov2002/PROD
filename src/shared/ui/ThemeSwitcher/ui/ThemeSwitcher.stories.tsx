@@ -1,10 +1,8 @@
-import {Meta, StoryObj} from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import {ThemeSwitcher} from "./ThemeSwitcher";
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-
-
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 // Default export with metadata
 const meta: Meta<typeof ThemeSwitcher> = {
@@ -15,7 +13,7 @@ const meta: Meta<typeof ThemeSwitcher> = {
     },
     tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
+
     },
 
 };
@@ -36,6 +34,6 @@ export const Dark: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 
 };
